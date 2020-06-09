@@ -4,5 +4,7 @@ inst/doc
 .Rhistory
 .RData
 .Ruserdata
-packrat
-packrat/lib*/
+inst/shiny_app/precisely/rsconnect
+deploy/
+cran-comments.md
+CRAN-RELEASE

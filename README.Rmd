@@ -15,11 +15,17 @@ knitr::opts_chunk$set(
   message = FALSE
 )
 ```
-[![Travis build status](https://travis-ci.org/malcolmbarrett/precisely.svg?branch=master)](https://travis-ci.org/malcolmbarrett/precisely) [![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/malcolmbarrett/precisely?branch=master&svg=true)](https://ci.appveyor.com/project/malcolmbarrett/precisely)
+<!-- badges: start -->
+[![Travis build status](https://travis-ci.org/malcolmbarrett/precisely.svg?branch=master)](https://travis-ci.org/malcolmbarrett/precisely) 
+[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/malcolmbarrett/precisely?branch=master&svg=true)](https://ci.appveyor.com/project/malcolmbarrett/precisely) 
+[![Codecov test coverage](https://codecov.io/gh/malcolmbarrett/precisely/branch/master/graph/badge.svg)](https://codecov.io/gh/malcolmbarrett/precisely?branch=master)
+[![CRAN status](https://www.r-pkg.org/badges/version/precisely)](https://CRAN.R-project.org/package=precisely)
+[![Lifecycle: maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
+<!-- badges: end -->
 
 # precisely: An R package for estimating sample size based on precision
 
-precisely is a study planning tool to calculate sample size based on precision rather than power. Power calculations are focused on whether or not an estimate will be statistically significant; calculations of precision are based on the same prinicples as power calculation but turn the focus to the width of the confidence interval. 
+precisely is a study planning tool to calculate sample size based on precision rather than power. Power calculations are focused on whether or not an estimate will be statistically significant; calculations of precision are based on the same principles as power calculation but turn the focus to the width of the confidence interval. 
 
 This package includes a Shiny app to help with calculations, which you can start with `launch_precisely_app()`. You can also find a live version at [malcolmbarrett.shinyapps.io/precisely](https://malcolmbarrett.shinyapps.io/precisely/).
 
@@ -28,6 +34,12 @@ For more, see the [vignette](http://precisely.malco.io/articles/introduction-to-
 These tools are based on the work of [Rothman and Greenland](https://www.ncbi.nlm.nih.gov/pubmed/29912015).
 
 ## Installation
+
+You precisely from CRAN with:
+
+``` r
+install.packages("precisely")
+```
 
 You can install the development version of precisely with:
 
@@ -79,4 +91,6 @@ map_precisely(
                labeller = as_labeller(function(x) paste("Unexposed/Exposed:", x)))
 ```
 
+## Code of Conduct
 
+Please note that the precisely project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.

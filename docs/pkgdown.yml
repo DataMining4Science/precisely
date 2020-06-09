@@ -1,6 +1,7 @@
-pandoc: 2.1.3
-pkgdown: 1.1.0.9000
-pkgdown_sha: 8ede1b57ad5e044bf0860bc9b15764c2d28bc4d2
+pandoc: 2.7.3
+pkgdown: 1.5.1
+pkgdown_sha: ~
 articles:
   introduction-to-precisely: introduction-to-precisely.html
+last_built: 2020-06-03T21:37Z
 

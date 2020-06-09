@@ -1,10 +1,19 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+<!-- badges: start -->
+
 [![Travis build
 status](https://travis-ci.org/malcolmbarrett/precisely.svg?branch=master)](https://travis-ci.org/malcolmbarrett/precisely)
 [![AppVeyor build
 status](https://ci.appveyor.com/api/projects/status/github/malcolmbarrett/precisely?branch=master&svg=true)](https://ci.appveyor.com/project/malcolmbarrett/precisely)
+[![Codecov test
+coverage](https://codecov.io/gh/malcolmbarrett/precisely/branch/master/graph/badge.svg)](https://codecov.io/gh/malcolmbarrett/precisely?branch=master)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/precisely)](https://CRAN.R-project.org/package=precisely)
+[![Lifecycle:
+maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
+<!-- badges: end -->
 
 # precisely: An R package for estimating sample size based on precision
 
@@ -26,6 +35,12 @@ These tools are based on the work of [Rothman and
 Greenland](https://www.ncbi.nlm.nih.gov/pubmed/29912015).
 
 ## Installation
+
+You precisely from CRAN with:
+
+``` r
+install.packages("precisely")
+```
 
 You can install the development version of precisely with:
 
@@ -64,11 +79,11 @@ n_risk_difference(
   group_ratio = 3,
   ci = .90
 )
-#> # A tibble: 1 x 8
+#> # A tibble: 1 x 9
 #>   n_exposed n_unexposed n_total risk_difference precision exposed unexposed
 #>       <dbl>       <dbl>   <dbl>           <dbl>     <dbl>   <dbl>     <dbl>
 #> 1      524.       1573.   2097.             0.1      0.08     0.4       0.3
-#> # ... with 1 more variable: group_ratio <dbl>
+#> # … with 2 more variables: group_ratio <dbl>, ci <dbl>
 ```
 
 precisely also provides functionality to calculate the precision of an
@@ -101,3 +116,10 @@ map_precisely(
 ```
 
 <img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />
+
+## Code of Conduct
+
+Please note that the precisely project is released with a [Contributor
+Code of
+Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html).
+By contributing to this project, you agree to abide by its terms.

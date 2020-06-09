@@ -9,3 +9,10 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^\.Rprofile$
+^inst/shiny_app/precisely/rsconnect$
+^deploy$
+^codecov\.yml$
+^cran-comments\.md$
+^CRAN-RELEASE$
+^CODE_OF_CONDUCT\.md$
+^\.github$
